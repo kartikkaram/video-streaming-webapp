@@ -1,4 +1,6 @@
 "use client"
+import { onBlock } from '@/action/block-unblock-action/onblock'
+import { onUnBlock } from '@/action/block-unblock-action/onunblock'
 import { onFollow } from '@/action/follow-unfollow-action/follow'
 import { onUnfollow } from '@/action/follow-unfollow-action/unfollow'
 import { Button } from '@/app/components/ui/button'
@@ -7,6 +9,7 @@ import { toast } from 'sonner'
 
 function Action({
 isFollowing,
+selfBlockedOther,
 userId,
 username
 }) {
@@ -34,12 +37,32 @@ username
         }
         )
     }
+    const handleBlock=() => {
+        startTransition(() => {
+            onBlock(userId,username)
+            .then((data) =>
+              toast.success(`you blocked ${data}`)  )
+            .catch((err) =>
+                toast.error(`something went wrong`))
+        }
+        )
+    }
+    const handleUnBlock=() => {
+        startTransition(() => {
+            onUnBlock(userId,username)
+            .then((data) =>
+              toast.success(`you unblocked ${data}`)  )
+            .catch((err) =>
+                toast.error(`something went wrong`))
+        }
+        )
+    }
     
     
 
 
 
-    const onClick=() => {
+    const followService=() => {
      if (isFollowing) {
         handleUnfollow()
      }
@@ -48,15 +71,30 @@ username
      }
     }
     
+    const blockService=() => {
+     if (selfBlockedOther) {
+        handleUnBlock()
+     }
+     else{
+        handleBlock()
+     }
+    }
+    
 
   return (
     <div>
       <Button
       variant="custom"
-      onClick={onClick}
+      onClick={followService}
     disabled={ispending}
       >
      {isFollowing? "unfollow":"follow"}
+      </Button>
+      <Button
+      variant="destructive"
+      onClick={blockService}
+      >
+      {selfBlockedOther? "unblock":"block"}
       </Button>
     </div>
   )

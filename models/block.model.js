@@ -2,20 +2,20 @@ import mongoose, { Schema } from "mongoose";
 
 
 
-const followSchema=new Schema({
-    followedto:{
+const blockSchema=new Schema({
+    blocked:{
         type:Schema.Types.ObjectId,
         ref: "User",
         required:true,
         index:true
     },
-    followedby:{
+    blockedby:{
         type:Schema.Types.ObjectId,
         ref: "User",
         required:true,
         index:true
     },
-    isfollowing:{
+    isblocking:{
         type:Boolean,
         default:false
     }
@@ -25,7 +25,7 @@ const followSchema=new Schema({
 
 
 
-const Follow=mongoose.models.Follow || mongoose.model("Follow",followSchema)
+const Block=mongoose.models.Block || mongoose.model("Block",blockSchema)
 
 
-export {Follow}
+export {Block}
