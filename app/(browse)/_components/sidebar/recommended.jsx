@@ -12,7 +12,7 @@ function Recommended({data}) {
     const showLabel=!collapsed && data.length >0
  
     
-let i=1
+
   return (
    <>
    {showLabel ?

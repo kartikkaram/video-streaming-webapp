@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { cn } from '@/lib/utils'
 import { ToggleSkeleton } from './toggle'
 import { RecommendedSkeleton } from './recommended'
+import { FollowListSkeleton } from './followlist'
 function Wrapper({children}) {
 const [isClient, setIsClient]=useState(false)
     const {collapsed}=useSidebar((state)=>state)
@@ -19,6 +20,7 @@ if(!isClient) return(
         collapsed ? "w-[70px]": "w-[70px] lg:w-60"
     )}>
         <ToggleSkeleton/>
+        <FollowListSkeleton/>
         <RecommendedSkeleton/>
     </aside>
 )

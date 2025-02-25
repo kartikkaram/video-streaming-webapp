@@ -36,7 +36,7 @@ function UserItem({
 <Link href={href} >
 <div className={cn(
     "flex items-center w-full gap-x-2",
-    collapsed&& "justify-center"
+    collapsed && "justify-center"
 )}>
 <UserAvatar
 imageurl={imageurl}

@@ -86,7 +86,7 @@ username
       <Button
       variant="custom"
       onClick={followService}
-    disabled={ispending}
+    disabled={ispending || selfBlockedOther}
       >
      {isFollowing? "unfollow":"follow"}
       </Button>
