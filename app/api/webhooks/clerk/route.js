@@ -57,6 +57,11 @@ export async function POST(req) {
   
 const eventType=evt.type
   if (eventType==='user.created') {
+    const existingUser=await User.findOne({username:payload.data.username})
+  
+    if (existingUser) {
+      return new Response({message:"user already exists", status:400, success:false})
+    }
     
  const createdUser=await User.create({
     username:payload.data.username,
