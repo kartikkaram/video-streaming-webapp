@@ -3,7 +3,7 @@ import {
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-  } from "@/app/components/ui/tooltip"
+  } from "@/components/ui/tooltip"
 
   import React from 'react'
   

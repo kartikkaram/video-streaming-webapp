@@ -1,12 +1,12 @@
-import { Button } from '@/app/components/ui/button'
+import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { useSidebar } from '@/store/useSidebar'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import React from 'react'
-import UserAvatar from '@/app/components/user-avatar'
-import LiveBadge from '@/app/components/live-badge'
-import { Skeleton } from '@/app/components/ui/skeleton'
+import UserAvatar from '@/components/user-avatar'
+import LiveBadge from '@/components/live-badge'
+import { Skeleton } from '@/components/ui/skeleton'
 
 function UserItem({
     username, 
@@ -42,8 +42,11 @@ function UserItem({
 imageurl={imageurl}
 username={username}
 isLive={isLive}
-/>{!collapsed && <p className='trunket'>{username}</p>}
+/>
+<div className='flex w-full justify-between'>
+  {!collapsed && <p className='trunket'>{username}</p>}
 {!collapsed && isLive && <LiveBadge className="ml-auto"/>}
+  </div>
 </div>
 </Link>
       </Button>

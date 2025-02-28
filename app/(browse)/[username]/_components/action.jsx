@@ -3,7 +3,7 @@ import { onBlock } from '@/action/block-unblock-action/onblock'
 import { onUnBlock } from '@/action/block-unblock-action/onunblock'
 import { onFollow } from '@/action/follow-unfollow-action/follow'
 import { onUnfollow } from '@/action/follow-unfollow-action/unfollow'
-import { Button } from '@/app/components/ui/button'
+import { Button } from '@/components/ui/button'
 import React, { useTransition } from 'react'
 import { toast } from 'sonner'
 

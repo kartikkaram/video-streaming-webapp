@@ -4,7 +4,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 
 import { Toaster } from "sonner";
-import { ThemeProvider } from "./components/theme-provider";
+import { ThemeProvider } from "@/components/theme-provider";
+
 
 
 const geistSans = Geist({

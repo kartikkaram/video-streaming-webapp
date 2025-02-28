@@ -1,7 +1,7 @@
 
 import { SignInButton, SignUpButton, UserButton,  } from '@clerk/nextjs'
 import { currentUser } from '@clerk/nextjs/server'
-import { Button } from '@/app/components/ui/button';
+import { Button } from '@/components/ui/button'
 import React from 'react'
 import { Clapperboard } from 'lucide-react';
 import Link from 'next/link';

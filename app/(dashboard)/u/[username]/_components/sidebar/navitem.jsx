@@ -1,5 +1,5 @@
-import { Button } from '@/app/components/ui/button'
-import { Skeleton } from '@/app/components/ui/skeleton'
+import { Button } from '@/components/ui/button'
+import { Skeleton } from '@/components/ui/skeleton'
 import { cn } from '@/lib/utils'
 import { useCreatorSidebar } from '@/store/useCreatorSidebar'
 import Link from 'next/link'

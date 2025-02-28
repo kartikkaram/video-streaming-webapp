@@ -42,10 +42,10 @@ if (!stream) {
         </div>
         <div className='space-y-4'>
        {
-         chatsettings.map((settings,index) => {
+         chatsettings.map((settings) => {
            return <div>
           <SettingsToggle
-          key={index}
+          key={settings.label}
           label={settings.label}
           value={settings.value}
           field={settings.field}

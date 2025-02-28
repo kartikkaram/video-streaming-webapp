@@ -1,7 +1,7 @@
 "use client"
-import Hint from '@/app/components/hint'
-import { Button } from '@/app/components/ui/button'
-import { Skeleton } from '@/app/components/ui/skeleton'
+import Hint from '@/components/hint'
+import { Button } from '@/components/ui/button'
+import { Skeleton } from '@/components/ui/skeleton'
 import { useCreatorSidebar } from '@/store/useCreatorSidebar'
 import { ArrowLeftFromLineIcon, ArrowRightFromLine } from 'lucide-react'
 import React from 'react'

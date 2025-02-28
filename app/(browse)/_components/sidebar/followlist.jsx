@@ -2,7 +2,7 @@
 import { useSidebar } from '@/store/useSidebar'
 import React from 'react'
 import UserItem, { UserItemSkeleton } from './user-item'
-import { Skeleton } from '@/app/components/ui/skeleton'
+import { Skeleton } from '@/components/ui/skeleton'
 
 function Followlist({
     data
