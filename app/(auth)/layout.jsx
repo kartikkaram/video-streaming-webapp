@@ -1,4 +1,5 @@
-import { Logo } from "./_component/logo";
+import { Logo } from "./_component/Logo";
+
 
 
 export default function AuthLayout({children}){

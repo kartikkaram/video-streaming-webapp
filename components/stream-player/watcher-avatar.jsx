@@ -39,7 +39,6 @@ function WatcherAvatar(
             "rounded-md",
             avatarSizes({size})
         )}>
-            <AvatarImage src={viewerimage} className=" rounded-md object-cover" />
             <AvatarFallback className="rounded-md"
   style={{ backgroundColor: fallbackColor }}>
                 {username?.[0]?.toUpperCase()|| "U"}
