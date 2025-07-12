@@ -1,0 +1,1078 @@
+[
+    {
+        "_events": {
+            "trackMuted": [
+                null,
+                null
+            ],
+            "trackUnmuted": [
+                null,
+                null
+            ],
+            "localTrackPublished": [
+                null,
+                null
+            ],
+            "localTrackUnpublished": [
+                null,
+                null
+            ],
+            "mediaDevicesError": [
+                null,
+                null
+            ],
+            "participantPermissionsChanged": [
+                null,
+                null
+            ]
+        },
+        "_eventsCount": 15,
+        "_maxListeners": 100,
+        "audioLevel": 0,
+        "isSpeaking": false,
+        "_connectionQuality": "excellent",
+        "log": {
+            "name": "livekit-participant",
+            "levels": {
+                "TRACE": 0,
+                "DEBUG": 1,
+                "INFO": 2,
+                "WARN": 3,
+                "ERROR": 4,
+                "SILENT": 5
+            }
+        },
+        "loggerOptions": {},
+        "sid": "PA_iLAsgfTYvQL7",
+        "identity": "host-67bde49140edfd4a6649c3e2",
+        "name": "kartikkaram",
+        "metadata": "",
+        "audioTrackPublications": {},
+        "videoTrackPublications": {},
+        "trackPublications": {},
+        "_kind": 0,
+        "_attributes": {},
+        "pendingPublishing": {},
+        "pendingPublishPromises": {},
+        "participantTrackPermissions": [],
+        "allParticipantsAllowedToSubscribe": true,
+        "encryptionType": 0,
+        "enabledPublishVideoCodecs": [
+            {
+                "mime": "video/VP8",
+                "fmtpLine": ""
+            },
+            {
+                "mime": "video/H264",
+                "fmtpLine": ""
+            },
+            {
+                "mime": "video/VP9",
+                "fmtpLine": ""
+            },
+            {
+                "mime": "video/AV1",
+                "fmtpLine": ""
+            },
+            {
+                "mime": "video/H265",
+                "fmtpLine": ""
+            }
+        ],
+        "pendingAcks": {},
+        "pendingResponses": {},
+        "engine": {
+            "_events": {
+                "disconnected": [
+                    null,
+                    null
+                ],
+                "dataPacketReceived": [
+                    null,
+                    null
+                ],
+                "resuming": [
+                    null,
+                    null
+                ],
+                "signalResumed": [
+                    null,
+                    null
+                ],
+                "restarting": [
+                    null,
+                    null
+                ],
+                "signalRestarted": [
+                    null,
+                    null
+                ]
+            },
+            "_eventsCount": 24,
+            "options": {
+                "adaptiveStream": false,
+                "dynacast": false,
+                "stopLocalTrackOnUnpublish": true,
+                "reconnectPolicy": {
+                    "_retryDelays": [
+                        0,
+                        300,
+                        1200,
+                        2700,
+                        4800,
+                        7000,
+                        7000,
+                        7000,
+                        7000,
+                        7000
+                    ]
+                },
+                "disconnectOnPageLeave": true,
+                "webAudioMix": false,
+                "audioCaptureDefaults": {
+                    "deviceId": "default",
+                    "autoGainControl": true,
+                    "echoCancellation": true,
+                    "noiseSuppression": true,
+                    "voiceIsolation": true
+                },
+                "videoCaptureDefaults": {
+                    "deviceId": "default",
+                    "resolution": {
+                        "width": 1280,
+                        "height": 720,
+                        "frameRate": 30,
+                        "aspectRatio": 1.7777777777777777
+                    }
+                },
+                "publishDefaults": {
+                    "audioPreset": {
+                        "maxBitrate": 48000
+                    },
+                    "dtx": true,
+                    "red": true,
+                    "forceStereo": false,
+                    "simulcast": true,
+                    "screenShareEncoding": {
+                        "maxBitrate": 2500000,
+                        "maxFramerate": 15,
+                        "priority": "medium"
+                    },
+                    "stopMicTrackOnMute": false,
+                    "videoCodec": "vp8",
+                    "backupCodec": true
+                }
+            },
+            "rtcConfig": {},
+            "peerConnectionTimeout": 15000,
+            "fullReconnectOnNext": false,
+            "subscriberPrimary": true,
+            "pcState": 1,
+            "_isClosed": false,
+            "pendingTrackResolvers": {},
+            "reconnectAttempts": 0,
+            "reconnectStart": 0,
+            "attemptingReconnect": false,
+            "joinAttempts": 1,
+            "maxJoinAttempts": 1,
+            "shouldFailNext": false,
+            "log": {
+                "name": "livekit-engine",
+                "levels": {
+                    "TRACE": 0,
+                    "DEBUG": 1,
+                    "INFO": 2,
+                    "WARN": 3,
+                    "ERROR": 4,
+                    "SILENT": 5
+                }
+            },
+            "loggerOptions": {},
+            "client": {
+                "rtt": 23,
+                "state": 1,
+                "log": {
+                    "name": "livekit-signal",
+                    "levels": {
+                        "TRACE": 0,
+                        "DEBUG": 1,
+                        "INFO": 2,
+                        "WARN": 3,
+                        "ERROR": 4,
+                        "SILENT": 5
+                    }
+                },
+                "_requestId": 0,
+                "useJSON": false,
+                "requestQueue": {
+                    "pendingTasks": {},
+                    "taskMutex": {
+                        "_locking": {},
+                        "_locks": 0
+                    },
+                    "nextTaskIndex": 67
+                },
+                "queuedRequests": [],
+                "closingLock": {
+                    "_locking": {},
+                    "_locks": 0
+                },
+                "connectionLock": {
+                    "_locking": {},
+                    "_locks": 0
+                },
+                "options": {
+                    "autoSubscribe": true,
+                    "adaptiveStream": false,
+                    "maxRetries": 1,
+                    "e2eeEnabled": false,
+                    "websocketTimeout": 15000
+                },
+                "connectOptions": {
+                    "autoSubscribe": true,
+                    "adaptiveStream": false,
+                    "maxRetries": 1,
+                    "e2eeEnabled": false,
+                    "websocketTimeout": 15000
+                },
+                "ws": {},
+                "pingTimeoutDuration": 15,
+                "pingIntervalDuration": 5,
+                "pingTimeout": 482,
+                "pingInterval": 324
+            },
+            "reconnectPolicy": {
+                "_retryDelays": [
+                    0,
+                    300,
+                    1200,
+                    2700,
+                    4800,
+                    7000,
+                    7000,
+                    7000,
+                    7000,
+                    7000
+                ]
+            },
+            "closingLock": {
+                "_locking": {},
+                "_locks": 0
+            },
+            "dataProcessLock": {
+                "_locking": {},
+                "_locks": 0
+            },
+            "dcBufferStatus": {},
+            "regionUrlProvider": {
+                "lastUpdateAt": 1743433923948,
+                "settingsCacheTime": 3000,
+                "attemptedRegions": [],
+                "serverUrl": "wss://twitch-clone-himrsmml.livekit.cloud/",
+                "token": "eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoia2FydGlra2FyYW0iLCJ2aWRlbyI6eyJyb29tIjoiNjdiZGU0OTE0MGVkZmQ0YTY2NDljM2UyIiwicm9vbUpvaW4iOnRydWUsImNhblB1Ymxpc2giOmZhbHNlLCJjYW5QdWJsaXNoRGF0YSI6dHJ1ZX0sImlzcyI6IkFQSTlHczlLVndlR1NibSIsImV4cCI6MTc0MzQ1NTUyMywibmJmIjowLCJzdWIiOiJob3N0LTY3YmRlNDkxNDBlZGZkNGE2NjQ5YzNlMiJ9.pV63KY4gbdxKme1UYIoIRX9y0oFoZn3n-4XyPQh00T4",
+                "regionSettings": {
+                    "regions": [
+                        {
+                            "region": "omumbai1a",
+                            "url": "https://twitch-clone-himrsmml.omumbai1a.production.livekit.cloud",
+                            "distance": "448892"
+                        },
+                        {
+                            "region": "odubai1a",
+                            "url": "https://twitch-clone-himrsmml.odubai1a.production.livekit.cloud",
+                            "distance": "1771742"
+                        },
+                        {
+                            "region": "ojerusalem1a",
+                            "url": "https://twitch-clone-himrsmml.ojerusalem1a.production.livekit.cloud",
+                            "distance": "3801136"
+                        }
+                    ]
+                }
+            },
+            "url": "wss://twitch-clone-himrsmml.livekit.cloud",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDM0MzQ1MjQsImlzcyI6IkFQSThxY2hyVnFNaVI4QSIsIm5hbWUiOiJrYXJ0aWtrYXJhbSIsIm5iZiI6MTc0MzQzMzkyNCwic3ViIjoiaG9zdC02N2JkZTQ5MTQwZWRmZDRhNjY0OWMzZTIiLCJ2aWRlbyI6eyJjYW5QdWJsaXNoIjpmYWxzZSwiY2FuUHVibGlzaERhdGEiOnRydWUsInJvb20iOiI2N2JkZTQ5MTQwZWRmZDRhNjY0OWMzZTIiLCJyb29tSm9pbiI6dHJ1ZX19.OLmMo9vOhUJskMgnHh1QAigWZO9MAGwAapPvlGfuJ1M",
+            "signalOpts": {
+                "autoSubscribe": true,
+                "adaptiveStream": false,
+                "maxRetries": 1,
+                "e2eeEnabled": false,
+                "websocketTimeout": 15000
+            },
+            "latestJoinResponse": {
+                "room": {
+                    "sid": "",
+                    "name": "67bde49140edfd4a6649c3e2",
+                    "emptyTimeout": 300,
+                    "maxParticipants": 0,
+                    "creationTime": "1743433923",
+                    "turnPassword": "",
+                    "enabledCodecs": [
+                        {
+                            "mime": "video/H264",
+                            "fmtpLine": ""
+                        },
+                        {
+                            "mime": "video/VP8",
+                            "fmtpLine": ""
+                        },
+                        {
+                            "mime": "video/VP9",
+                            "fmtpLine": ""
+                        },
+                        {
+                            "mime": "video/AV1",
+                            "fmtpLine": ""
+                        },
+                        {
+                            "mime": "audio/red",
+                            "fmtpLine": ""
+                        },
+                        {
+                            "mime": "audio/opus",
+                            "fmtpLine": ""
+                        }
+                    ],
+                    "metadata": "",
+                    "numParticipants": 1,
+                    "activeRecording": false,
+                    "numPublishers": 1,
+                    "version": {
+                        "unixMicro": "1743433919658549",
+                        "ticks": 0
+                    },
+                    "departureTimeout": 20,
+                    "creationTimeMs": "1743433923924"
+                },
+                "participant": {
+                    "sid": "PA_iLAsgfTYvQL7",
+                    "identity": "host-67bde49140edfd4a6649c3e2",
+                    "state": "JOINING",
+                    "tracks": [],
+                    "metadata": "",
+                    "joinedAt": "1743433924",
+                    "name": "kartikkaram",
+                    "version": 0,
+                    "permission": {
+                        "canSubscribe": true,
+                        "canPublish": false,
+                        "canPublishData": true,
+                        "hidden": false,
+                        "recorder": false,
+                        "canPublishSources": [],
+                        "canUpdateMetadata": false,
+                        "agent": false,
+                        "canSubscribeMetrics": false
+                    },
+                    "region": "omumbai1a",
+                    "isPublisher": false,
+                    "kind": "STANDARD",
+                    "attributes": {},
+                    "disconnectReason": "UNKNOWN_REASON",
+                    "joinedAtMs": "1743433924066"
+                },
+                "otherParticipants": [
+                    {
+                        "sid": "PA_PNgpiobWqGf5",
+                        "identity": "67bde49140edfd4a6649c3e2",
+                        "state": "ACTIVE",
+                        "tracks": [
+                            {
+                                "sid": "TR_AMr9YEkrRcvEe4",
+                                "type": "AUDIO",
+                                "name": "",
+                                "muted": false,
+                                "width": 0,
+                                "height": 0,
+                                "simulcast": false,
+                                "disableDtx": false,
+                                "source": "MICROPHONE",
+                                "layers": [],
+                                "mimeType": "audio/opus",
+                                "mid": "1",
+                                "codecs": [],
+                                "stereo": true,
+                                "disableRed": false,
+                                "encryption": "NONE",
+                                "stream": "camera",
+                                "version": {
+                                    "unixMicro": "1743433921552126",
+                                    "ticks": 0
+                                },
+                                "audioFeatures": [
+                                    "TF_STEREO"
+                                ],
+                                "backupCodecPolicy": "REGRESSION"
+                            },
+                            {
+                                "sid": "TR_VCNLDGm2bzHghd",
+                                "type": "VIDEO",
+                                "name": "",
+                                "muted": false,
+                                "width": 1280,
+                                "height": 720,
+                                "simulcast": true,
+                                "disableDtx": false,
+                                "source": "CAMERA",
+                                "layers": [
+                                    {
+                                        "quality": "LOW",
+                                        "width": 320,
+                                        "height": 180,
+                                        "bitrate": 237500,
+                                        "ssrc": 509831361
+                                    },
+                                    {
+                                        "quality": "MEDIUM",
+                                        "width": 640,
+                                        "height": 360,
+                                        "bitrate": 671751,
+                                        "ssrc": 3518023163
+                                    },
+                                    {
+                                        "quality": "HIGH",
+                                        "width": 1280,
+                                        "height": 720,
+                                        "bitrate": 1900000,
+                                        "ssrc": 1019915008
+                                    }
+                                ],
+                                "mimeType": "video/H264",
+                                "mid": "2",
+                                "codecs": [
+                                    {
+                                        "mimeType": "video/H264",
+                                        "mid": "2",
+                                        "cid": "IN_E5zqDrVx6zbk",
+                                        "layers": [
+                                            {
+                                                "quality": "LOW",
+                                                "width": 320,
+                                                "height": 180,
+                                                "bitrate": 237500,
+                                                "ssrc": 509831361
+                                            },
+                                            {
+                                                "quality": "MEDIUM",
+                                                "width": 640,
+                                                "height": 360,
+                                                "bitrate": 671751,
+                                                "ssrc": 3518023163
+                                            },
+                                            {
+                                                "quality": "HIGH",
+                                                "width": 1280,
+                                                "height": 720,
+                                                "bitrate": 1900000,
+                                                "ssrc": 1019915008
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "stereo": false,
+                                "disableRed": false,
+                                "encryption": "NONE",
+                                "stream": "camera",
+                                "version": {
+                                    "unixMicro": "1743433923171965",
+                                    "ticks": 0
+                                },
+                                "audioFeatures": [],
+                                "backupCodecPolicy": "REGRESSION"
+                            }
+                        ],
+                        "metadata": "",
+                        "joinedAt": "1743433919",
+                        "name": "kartikkaram",
+                        "version": 6,
+                        "permission": {
+                            "canSubscribe": false,
+                            "canPublish": true,
+                            "canPublishData": true,
+                            "hidden": false,
+                            "recorder": false,
+                            "canPublishSources": [],
+                            "canUpdateMetadata": true,
+                            "agent": false,
+                            "canSubscribeMetrics": false
+                        },
+                        "region": "osingapore1a",
+                        "isPublisher": true,
+                        "kind": "INGRESS",
+                        "attributes": {},
+                        "disconnectReason": "UNKNOWN_REASON",
+                        "joinedAtMs": "1743433919659"
+                    }
+                ],
+                "serverVersion": "1.8.4",
+                "iceServers": [
+                    {
+                        "urls": [
+                            "turn:ip-80-225-214-140.host.livekit.cloud:3478?transport=udp",
+                            "turn:80.225.214.140:3478?transport=udp",
+                            "turns:omumbai1a.turn.livekit.cloud:443?transport=tcp"
+                        ],
+                        "username": "3wUU2lFVmd2cBxUafKIo4LIckKtmizK5Qbs4wJJoCC",
+                        "credential": "wzfIhGz2DGiNvCL7J1N4onmaJ27edjg5k3CTemjf2yvA"
+                    }
+                ],
+                "subscriberPrimary": true,
+                "alternativeUrl": "",
+                "serverRegion": "India",
+                "pingTimeout": 15,
+                "pingInterval": 5,
+                "serverInfo": {
+                    "edition": "Cloud",
+                    "version": "1.8.4",
+                    "protocol": 15,
+                    "region": "India",
+                    "nodeId": "NM_OMUMBAI1A_CcAMv9AJhLN7",
+                    "debugInfo": "",
+                    "agentProtocol": 0
+                },
+                "sifTrailer": "H4xXI4oA8d0=",
+                "enabledPublishCodecs": [
+                    {
+                        "mime": "video/VP8",
+                        "fmtpLine": ""
+                    },
+                    {
+                        "mime": "video/H264",
+                        "fmtpLine": ""
+                    },
+                    {
+                        "mime": "video/VP9",
+                        "fmtpLine": ""
+                    },
+                    {
+                        "mime": "video/AV1",
+                        "fmtpLine": ""
+                    },
+                    {
+                        "mime": "audio/red",
+                        "fmtpLine": ""
+                    },
+                    {
+                        "mime": "audio/opus",
+                        "fmtpLine": ""
+                    },
+                    {
+                        "mime": "video/H265",
+                        "fmtpLine": ""
+                    }
+                ],
+                "fastPublish": false
+            },
+            "participantSid": "PA_iLAsgfTYvQL7",
+            "pcManager": {
+                "peerConnectionTimeout": 15000,
+                "log": {
+                    "name": "livekit-pc-manager",
+                    "levels": {
+                        "TRACE": 0,
+                        "DEBUG": 1,
+                        "INFO": 2,
+                        "WARN": 3,
+                        "ERROR": 4,
+                        "SILENT": 5
+                    }
+                },
+                "loggerOptions": {},
+                "isPublisherConnectionRequired": false,
+                "isSubscriberConnectionRequired": true,
+                "publisher": {
+                    "_events": {},
+                    "_eventsCount": 0,
+                    "log": {
+                        "name": "livekit-pc-transport",
+                        "levels": {
+                            "TRACE": 0,
+                            "DEBUG": 1,
+                            "INFO": 2,
+                            "WARN": 3,
+                            "ERROR": 4,
+                            "SILENT": 5
+                        }
+                    },
+                    "ddExtID": 0,
+                    "pendingCandidates": [],
+                    "restartingIce": false,
+                    "renegotiate": false,
+                    "trackBitrates": [],
+                    "remoteStereoMids": [],
+                    "remoteNackMids": [],
+                    "loggerOptions": {},
+                    "config": {
+                        "iceServers": [
+                            {
+                                "urls": [
+                                    "turn:ip-80-225-214-140.host.livekit.cloud:3478?transport=udp",
+                                    "turn:80.225.214.140:3478?transport=udp",
+                                    "turns:omumbai1a.turn.livekit.cloud:443?transport=tcp"
+                                ],
+                                "username": "3wUU2lFVmd2cBxUafKIo4LIckKtmizK5Qbs4wJJoCC",
+                                "credential": "wzfIhGz2DGiNvCL7J1N4onmaJ27edjg5k3CTemjf2yvA"
+                            }
+                        ],
+                        "sdpSemantics": "unified-plan",
+                        "continualGatheringPolicy": "gather_continually"
+                    },
+                    "_pc": {
+                        "_eventMap": {
+                            "datachannel": {},
+                            "track": {}
+                        }
+                    }
+                },
+                "subscriber": {
+                    "_events": {},
+                    "_eventsCount": 0,
+                    "log": {
+                        "name": "livekit-pc-transport",
+                        "levels": {
+                            "TRACE": 0,
+                            "DEBUG": 1,
+                            "INFO": 2,
+                            "WARN": 3,
+                            "ERROR": 4,
+                            "SILENT": 5
+                        }
+                    },
+                    "ddExtID": 0,
+                    "pendingCandidates": [],
+                    "restartingIce": false,
+                    "renegotiate": false,
+                    "trackBitrates": [],
+                    "remoteStereoMids": [
+                        0
+                    ],
+                    "remoteNackMids": [
+                        0
+                    ],
+                    "loggerOptions": {},
+                    "config": {
+                        "iceServers": [
+                            {
+                                "urls": [
+                                    "turn:ip-80-225-214-140.host.livekit.cloud:3478?transport=udp",
+                                    "turn:80.225.214.140:3478?transport=udp",
+                                    "turns:omumbai1a.turn.livekit.cloud:443?transport=tcp"
+                                ],
+                                "username": "3wUU2lFVmd2cBxUafKIo4LIckKtmizK5Qbs4wJJoCC",
+                                "credential": "wzfIhGz2DGiNvCL7J1N4onmaJ27edjg5k3CTemjf2yvA"
+                            }
+                        ],
+                        "sdpSemantics": "unified-plan",
+                        "continualGatheringPolicy": "gather_continually"
+                    },
+                    "_pc": {
+                        "_eventMap": {
+                            "datachannel": {},
+                            "track": {}
+                        },
+                        "_sctp": {}
+                    }
+                },
+                "state": 2,
+                "connectionLock": {
+                    "_locking": {},
+                    "_locks": 0
+                },
+                "remoteOfferLock": {
+                    "_locking": {},
+                    "_locks": 0
+                }
+            },
+            "reliableDCSub": {},
+            "lossyDCSub": {}
+        },
+        "roomOptions": {
+            "adaptiveStream": false,
+            "dynacast": false,
+            "stopLocalTrackOnUnpublish": true,
+            "reconnectPolicy": {
+                "_retryDelays": [
+                    0,
+                    300,
+                    1200,
+                    2700,
+                    4800,
+                    7000,
+                    7000,
+                    7000,
+                    7000,
+                    7000
+                ]
+            },
+            "disconnectOnPageLeave": true,
+            "webAudioMix": false,
+            "audioCaptureDefaults": {
+                "deviceId": "default",
+                "autoGainControl": true,
+                "echoCancellation": true,
+                "noiseSuppression": true,
+                "voiceIsolation": true
+            },
+            "videoCaptureDefaults": {
+                "deviceId": "default",
+                "resolution": {
+                    "width": 1280,
+                    "height": 720,
+                    "frameRate": 30,
+                    "aspectRatio": 1.7777777777777777
+                }
+            },
+            "publishDefaults": {
+                "audioPreset": {
+                    "maxBitrate": 48000
+                },
+                "dtx": true,
+                "red": true,
+                "forceStereo": false,
+                "simulcast": true,
+                "screenShareEncoding": {
+                    "maxBitrate": 2500000,
+                    "maxFramerate": 15,
+                    "priority": "medium"
+                },
+                "stopMicTrackOnMute": false,
+                "videoCodec": "vp8",
+                "backupCodec": true
+            }
+        },
+        "activeDeviceMap": {},
+        "pendingSignalRequests": {},
+        "rpcHandlers": {},
+        "audioContext": {},
+        "permissions": {
+            "canSubscribe": true,
+            "canPublish": false,
+            "canPublishData": true,
+            "hidden": false,
+            "recorder": false,
+            "canPublishSources": [],
+            "canUpdateMetadata": false,
+            "agent": false,
+            "canSubscribeMetrics": false
+        },
+        "participantInfo": {
+            "sid": "PA_iLAsgfTYvQL7",
+            "identity": "host-67bde49140edfd4a6649c3e2",
+            "state": "ACTIVE",
+            "tracks": [],
+            "metadata": "",
+            "joinedAt": "1743433924",
+            "name": "kartikkaram",
+            "version": 2,
+            "permission": {
+                "canSubscribe": true,
+                "canPublish": false,
+                "canPublishData": true,
+                "hidden": false,
+                "recorder": false,
+                "canPublishSources": [],
+                "canUpdateMetadata": false,
+                "agent": false,
+                "canSubscribeMetrics": false
+            },
+            "region": "omumbai1a",
+            "isPublisher": false,
+            "kind": "STANDARD",
+            "attributes": {},
+            "disconnectReason": "UNKNOWN_REASON",
+            "joinedAtMs": "1743433924066"
+        }
+    },
+    {
+        "_events": {
+            "trackPublished": [
+                null,
+                null,
+                null
+            ],
+            "trackUnpublished": [
+                null,
+                null,
+                null
+            ],
+            "trackMuted": [
+                null,
+                null,
+                null
+            ],
+            "trackUnmuted": [
+                null,
+                null,
+                null
+            ],
+            "participantMetadataChanged": [
+                null,
+                null,
+                null
+            ],
+            "connectionQualityChanged": [
+                null,
+                null,
+                null
+            ],
+            "participantPermissionsChanged": [
+                null,
+                null,
+                null
+            ],
+            "trackSubscriptionStatusChanged": [
+                null,
+                null,
+                null
+            ],
+            "trackSubscriptionFailed": [
+                null,
+                null,
+                null
+            ],
+            "trackSubscriptionPermissionChanged": [
+                null,
+                null,
+                null
+            ],
+            "isSpeakingChanged": [
+                null,
+                null
+            ],
+            "trackStreamStateChanged": [
+                null,
+                null
+            ],
+            "localTrackPublished": [
+                null,
+                null
+            ],
+            "localTrackUnpublished": [
+                null,
+                null
+            ]
+        },
+        "_eventsCount": 18,
+        "_maxListeners": 100,
+        "audioLevel": 0,
+        "isSpeaking": false,
+        "_connectionQuality": "excellent",
+        "log": {
+            "name": "livekit-participant",
+            "levels": {
+                "TRACE": 0,
+                "DEBUG": 1,
+                "INFO": 2,
+                "WARN": 3,
+                "ERROR": 4,
+                "SILENT": 5
+            }
+        },
+        "loggerOptions": {},
+        "sid": "PA_PNgpiobWqGf5",
+        "identity": "67bde49140edfd4a6649c3e2",
+        "name": "kartikkaram",
+        "metadata": "",
+        "audioTrackPublications": {},
+        "videoTrackPublications": {},
+        "trackPublications": {},
+        "_kind": 1,
+        "_attributes": {},
+        "signalClient": {
+            "rtt": 23,
+            "state": 1,
+            "log": {
+                "name": "livekit-signal",
+                "levels": {
+                    "TRACE": 0,
+                    "DEBUG": 1,
+                    "INFO": 2,
+                    "WARN": 3,
+                    "ERROR": 4,
+                    "SILENT": 5
+                }
+            },
+            "_requestId": 0,
+            "useJSON": false,
+            "requestQueue": {
+                "pendingTasks": {},
+                "taskMutex": {
+                    "_locking": {},
+                    "_locks": 0
+                },
+                "nextTaskIndex": 67
+            },
+            "queuedRequests": [],
+            "closingLock": {
+                "_locking": {},
+                "_locks": 0
+            },
+            "connectionLock": {
+                "_locking": {},
+                "_locks": 0
+            },
+            "options": {
+                "autoSubscribe": true,
+                "adaptiveStream": false,
+                "maxRetries": 1,
+                "e2eeEnabled": false,
+                "websocketTimeout": 15000
+            },
+            "connectOptions": {
+                "autoSubscribe": true,
+                "adaptiveStream": false,
+                "maxRetries": 1,
+                "e2eeEnabled": false,
+                "websocketTimeout": 15000
+            },
+            "ws": {},
+            "pingTimeoutDuration": 15,
+            "pingIntervalDuration": 5,
+            "pingTimeout": 482,
+            "pingInterval": 324
+        },
+        "volumeMap": {},
+        "permissions": {
+            "canSubscribe": false,
+            "canPublish": true,
+            "canPublishData": true,
+            "hidden": false,
+            "recorder": false,
+            "canPublishSources": [],
+            "canUpdateMetadata": true,
+            "agent": false,
+            "canSubscribeMetrics": false
+        },
+        "participantInfo": {
+            "sid": "PA_PNgpiobWqGf5",
+            "identity": "67bde49140edfd4a6649c3e2",
+            "state": "ACTIVE",
+            "tracks": [
+                {
+                    "sid": "TR_AMr9YEkrRcvEe4",
+                    "type": "AUDIO",
+                    "name": "",
+                    "muted": false,
+                    "width": 0,
+                    "height": 0,
+                    "simulcast": false,
+                    "disableDtx": false,
+                    "source": "MICROPHONE",
+                    "layers": [],
+                    "mimeType": "audio/opus",
+                    "mid": "1",
+                    "codecs": [],
+                    "stereo": true,
+                    "disableRed": false,
+                    "encryption": "NONE",
+                    "stream": "camera",
+                    "version": {
+                        "unixMicro": "1743433921552126",
+                        "ticks": 0
+                    },
+                    "audioFeatures": [
+                        "TF_STEREO"
+                    ],
+                    "backupCodecPolicy": "REGRESSION"
+                },
+                {
+                    "sid": "TR_VCNLDGm2bzHghd",
+                    "type": "VIDEO",
+                    "name": "",
+                    "muted": false,
+                    "width": 1280,
+                    "height": 720,
+                    "simulcast": true,
+                    "disableDtx": false,
+                    "source": "CAMERA",
+                    "layers": [
+                        {
+                            "quality": "LOW",
+                            "width": 320,
+                            "height": 180,
+                            "bitrate": 237500,
+                            "ssrc": 509831361
+                        },
+                        {
+                            "quality": "MEDIUM",
+                            "width": 640,
+                            "height": 360,
+                            "bitrate": 671751,
+                            "ssrc": 3518023163
+                        },
+                        {
+                            "quality": "HIGH",
+                            "width": 1280,
+                            "height": 720,
+                            "bitrate": 1900000,
+                            "ssrc": 1019915008
+                        }
+                    ],
+                    "mimeType": "video/H264",
+                    "mid": "2",
+                    "codecs": [
+                        {
+                            "mimeType": "video/H264",
+                            "mid": "2",
+                            "cid": "IN_E5zqDrVx6zbk",
+                            "layers": [
+                                {
+                                    "quality": "LOW",
+                                    "width": 320,
+                                    "height": 180,
+                                    "bitrate": 237500,
+                                    "ssrc": 509831361
+                                },
+                                {
+                                    "quality": "MEDIUM",
+                                    "width": 640,
+                                    "height": 360,
+                                    "bitrate": 671751,
+                                    "ssrc": 3518023163
+                                },
+                                {
+                                    "quality": "HIGH",
+                                    "width": 1280,
+                                    "height": 720,
+                                    "bitrate": 1900000,
+                                    "ssrc": 1019915008
+                                }
+                            ]
+                        }
+                    ],
+                    "stereo": false,
+                    "disableRed": false,
+                    "encryption": "NONE",
+                    "stream": "camera",
+                    "version": {
+                        "unixMicro": "1743433923171965",
+                        "ticks": 0
+                    },
+                    "audioFeatures": [],
+                    "backupCodecPolicy": "REGRESSION"
+                }
+            ],
+            "metadata": "",
+            "joinedAt": "1743433919",
+            "name": "kartikkaram",
+            "version": 6,
+            "permission": {
+                "canSubscribe": false,
+                "canPublish": true,
+                "canPublishData": true,
+                "hidden": false,
+                "recorder": false,
+                "canPublishSources": [],
+                "canUpdateMetadata": true,
+                "agent": false,
+                "canSubscribeMetrics": false
+            },
+            "region": "osingapore1a",
+            "isPublisher": true,
+            "kind": "INGRESS",
+            "attributes": {},
+            "disconnectReason": "UNKNOWN_REASON",
+            "joinedAtMs": "1743433919659"
+        }
+    }
+]

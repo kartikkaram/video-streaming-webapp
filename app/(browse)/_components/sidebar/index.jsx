@@ -9,7 +9,7 @@ import { getFollowList } from '@/lib/follow-service/getfollowlist'
 const Sidebar=async()=>{
   const recommendedList= await recommender()
   const followlList=await getFollowList()
-
+  
   return (
     <Wrapper>
   <Toggle />

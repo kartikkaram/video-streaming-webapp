@@ -18,7 +18,7 @@ const Logo=()=> {
      <Image
      
      src="/spooky.svg"
-     alt='twitch-clone' 
+     alt='Live space' 
      height="32"
      width="32"
       />
@@ -28,7 +28,7 @@ const Logo=()=> {
         font.className
       )}>
         <p className='text-lg font-semibold'>
-            Twitch-clone
+            Live space
         </p>
         <p className='text-xs text-muted-foreground'>
             Creator Dashboard

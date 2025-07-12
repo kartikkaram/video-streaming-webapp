@@ -2,21 +2,32 @@
 
 
 import { block } from "@/lib/block-service/block-user";
+import { RoomServiceClient } from "livekit-server-sdk";
 import { revalidatePath } from "next/cache"
 
-export const onBlock=async (userId,username) => {
+
+
+
+
+const roomService=new RoomServiceClient(
+    process.env.LIVEKIT_API_URL,
+    process.env.LIVEKIT_API_KEY,
+    process.env.LIVEKIT_SECRET_KEY,   
+)
+
+export const onBlock=async (userId,username,hostId) => {
   
  try {
 // this works same as an api call and it is easier
-
- const blocked=await block(userId)
+try {
+     const blocked=await block(userId)
+} catch (error) {
+    roomService.removeParticipant(hostId, userId)
+}
 
 
 revalidatePath("/");
 
-if(!blocked){
-    throw new Error("You have already blocked this user.")
-}
 
  if (username) {
      revalidatePath(`/${username}`)

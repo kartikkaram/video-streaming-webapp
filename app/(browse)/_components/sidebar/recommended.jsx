@@ -11,11 +11,11 @@ function Recommended({data}) {
 
     const showLabel=!collapsed && data.length >0
  
-    
+    const showIcon=collapsed && data.length>0
 
   return (
    <>
-   {showLabel ?
+   {showLabel &&
    <div className='pl-6 mb-4 overflow-hidden'>
         <p className='text-sm text-muted-foreground ml-4'>Recommendeds</p>
     <ul className='mt-2 mr-1 '>
@@ -25,28 +25,35 @@ function Recommended({data}) {
           key={user.clerkid}
           username={user.username}
           imageurl={user.imageurl}
-          isLive={true}
+          isLive={user.streaminfo}
           />
        }
     )}
    </ul>
     </div>
-    :
-    <div>
+          }
+    {
+showIcon &&
+      <div>
            <ul className='mt-2 px-2'>
     { data.map(
-        (user) => {
-          return <UserItem
-          key={user.clerkid}
-          username={user.username}
-          imageurl={user.imageurl}
-          isLive={true}
-          />
-       }
+      (user) => {
+        return <UserItem
+        key={user.clerkid}
+        username={user.username}
+        imageurl={user.imageurl}
+        isLive={user.streaminfo}
+        />
+      }
     )}
    </ul>
     </div>
-    }
+  }
+  {
+    !showIcon && !showLabel &&
+      <div>no Recommendeds</div>
+    
+  }
    </>
   )
 }

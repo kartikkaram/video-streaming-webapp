@@ -22,7 +22,7 @@ async function CreatorLayout({
   return (
     <>
       <Navbar/>
-    <div className='flex h-full pt-20 w-full '>
+    <div className='flex h-full pt-20 '>
       <Sidebar/>
       <Container>
         {children}

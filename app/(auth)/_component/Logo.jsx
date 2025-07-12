@@ -15,7 +15,7 @@ const Logo=()=> {
       <div className='bg-white rounded-full p-1'>
      <Image
      src="/spooky.svg"
-     alt='twitch-clone' 
+     alt='Live space' 
      height="50"
      width="50"
       />
@@ -25,7 +25,7 @@ const Logo=()=> {
         font.className
       )}>
         <p className='text-xl font-semibold'>
-            Twitch-clone
+            Live space
         </p>
         <p className='text-sm text-muted-foreground'>
             Let's stream

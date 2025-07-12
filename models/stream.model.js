@@ -44,6 +44,9 @@ const streamSchema=new Schema({
         type:Boolean,
         default:false
     },
+    bio:{
+        type:String
+    }
 },
 {timestamps:true}
 )

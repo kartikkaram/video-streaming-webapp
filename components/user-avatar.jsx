@@ -59,7 +59,7 @@ function UserAvatar(
 }
 
 
-const UserAvatarSkeleton=(
+export const UserAvatarSkeleton=(
     {
         size="default"
     }

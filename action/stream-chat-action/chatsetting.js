@@ -8,9 +8,9 @@ import { revalidatePath } from "next/cache"
 
 export async function chatSettingToggler(value, field) {
 try {
+    
         if(!field){
-            
-            throw new Error("value or field is missing")
+            throw new Error(" field is missing")
         }
     const settingsUpdated=await updateChatSettings(value, field)
     const self= await authService()
@@ -25,6 +25,7 @@ try {
     }
     return settingsUpdated
 } catch (error) {
+    console.log(error)
     throw new Error(error.message || "internal error while updating settings")
 }
 }

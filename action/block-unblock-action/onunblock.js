@@ -10,12 +10,12 @@ export const onUnBlock=async (userId,username) => {
  try {
 // this works same as an api call and it is easier
 
- const unBlocked=await unBlock(userId)
-
+ const unBlockedUser=await unBlock(userId)
+console.log("unblock",unBlockedUser)
 //  console.log(followed)
 revalidatePath("/");
 
-if(!unBlocked){
+if(!unBlockedUser){
     throw new Error("coudnt unblock.")
 }
 
@@ -23,7 +23,7 @@ if(!unBlocked){
      revalidatePath(`/${username}`)
 }
 
- return username
+ return unBlockedUser
 
  } catch (error) {
  

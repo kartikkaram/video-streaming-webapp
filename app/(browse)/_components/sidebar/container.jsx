@@ -26,7 +26,7 @@ useEffect(() => {
 
 
   return (
-    <div className={cn("transition-all",
+    <div className={cn("transition-all w-full",
        collapsed ? "ml-[70px]":"ml-[70px] lg:ml-60"
     )}>
       {children}

@@ -8,12 +8,12 @@ function Followlist({
     data
 }) {
 
-    if(!data.length){
-      return null
-    }
-
-    const {collapsed}=useSidebar((state)=>state)
-
+  const {collapsed}=useSidebar((state)=>state)
+  
+  if(!data.length){
+    return null
+  }
+  
   return (
     <>
     {!collapsed ?   <div className='pl-6 mb-4 overflow-hidden' >
@@ -24,7 +24,7 @@ function Followlist({
               key={index}
               username={user.followedusers[0].username}
               imageurl={user.followedusers[0].imageurl}
-              isLive={true}
+              isLive={user.streaminfo[0]}
               />
             }
             )}
@@ -37,7 +37,7 @@ function Followlist({
               key={index}
               username={user.followedusers[0].username}
               imageurl={user.followedusers[0].imageurl}
-              isLive={true}
+              isLive={user.streaminfo[0]}
               />
             }
             )}

@@ -24,7 +24,10 @@ const roomService=new RoomServiceClient(
     process.env.LIVEKIT_SECRET_KEY,   
 )
 
-const ingressClient=new IngressClient(process.env.LIVEKIT_API_URL)
+const ingressClient=new IngressClient(  process.env.LIVEKIT_API_URL,
+    process.env.LIVEKIT_API_KEY,
+    process.env.LIVEKIT_SECRET_KEY,   
+)
 
 
 export const resetIngresses =async function (hostIdentity) {
@@ -52,15 +55,19 @@ try {
     await connect()
     
     const self=await authService()
-    await resetIngresses(self._id)
+
+    if (!self) throw new Error("User not authenticated");
+
+    const selfId=self._id.toString()
+    await resetIngresses(selfId)
     
     
     
     const options ={
     name:self.username,
-    roomName:self._id,
+    roomName:selfId,
     participantName:self.username,
-    participantIdentity:self._id
+    participantIdentity:selfId
     }
     
     if (ingressType===IngressInput.RTMP_INPUT) {
@@ -73,25 +80,29 @@ try {
             preset:IngressAudioEncodingPreset.OPUS_STEREO_96KBPS
         }
     }
-    const ingress= await ingressClient.createIngress(
-        ingressType,
-        options
-    )
+    const ingress= await ingressClient.createIngress(ingressType,options)
     
     if(!ingress || !ingress.url || !ingress.streamKey){
         throw new Error("failed to create ingress")
     }
     
     
-    await Stream.findOneAndUpdate({ownerid:self._id},{
+    const stream=await Stream.findOneAndUpdate({ownerid:self._id},{
         ingressid:ingress.ingressId,
         serverurl:ingress.url,
         streamkey:ingress.streamKey
-    })
-    
+    },  { new: true, upsert: true })
+
+  if(!stream){
+    throw new Error("failed to update stream document")
+  }
     revalidatePath(`/u/${self.username}/keys`)
+    return {
+        ingressId: ingress.ingressId,
+        url: ingress.url,
+        streamKey: ingress.streamKey,
+    };
     
-    return ingress
 } catch (error) {
     throw new Error(error.message || "internal error")
 }

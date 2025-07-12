@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const MONGODB_URL = process.env.MONGO_DB_URL;
 const MONGODB_NAME =process.env.MONGO_DB_NAME;
-console.log(MONGODB_URL)
+
 if (!MONGODB_URL) {
     throw new Error(
     "Please define the MONGODB_URL environment variable inside .env"

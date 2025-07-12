@@ -13,12 +13,12 @@ const font = Poppins({
 const Logo=()=> {
   return (
     <Link href={"/"}>
-    <div className=' flex items-center justify-center gap-3 hover:opacity-75 transition'>
+    <div className=' flex items-center justify-center gap-3 hover:opacity-75 transition border-none'>
       <div className='bg-white rounded-full p-1 mr-2'>
      <Image
      
      src="/spooky.svg"
-     alt='twitch-clone' 
+     alt='Live space' 
      height="32"
      width="32"
       />
@@ -26,9 +26,10 @@ const Logo=()=> {
       <div className={cn(
         " flex-col items-center justify-center gap-2 hidden lg:flex ",
         font.className
-      )}>
+      )}
+      >
         <p className='text-lg font-semibold'>
-            Twitch-clone
+            Live space
         </p>
         <p className='text-xs text-muted-foreground'>
             Let's stream

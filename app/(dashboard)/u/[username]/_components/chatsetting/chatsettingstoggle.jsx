@@ -24,9 +24,7 @@ function SettingsToggle({
         .catch(()=>toast.error("something went wrong while updating chat settings"))
       }
       )
-      // The 'value' used here is captured at the time the function is called.
-     // It does not reflect updated state or database changes during execution,
-     // ensuring consistent behavior within the function's context.
+    
 
     }
 
@@ -40,7 +38,6 @@ function SettingsToggle({
     <p className='font-semibold'>{label}</p>
     <div className='space-y-2'>
     <Switch
-    
     disabled={ispending}
     checked={value}
     onCheckedChange={onchange}

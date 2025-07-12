@@ -14,6 +14,7 @@ export const onFollow=async (userId,username) => {
 //  console.log(followed)
 revalidatePath("/");
 
+
 if(!followed){
     throw new Error("You are already following this user.")
 }

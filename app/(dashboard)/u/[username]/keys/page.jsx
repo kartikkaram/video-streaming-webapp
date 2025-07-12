@@ -13,7 +13,7 @@ if (!stream) {
   throw new Error("stream not found")
 }
 
-   
+  
 
   return (
     <div className="p-6">
@@ -24,8 +24,8 @@ if (!stream) {
         <ConnectModal />
       </div>
       <div className="space-y-4">
-        <UrlCard value={stream.serverUrl} />
-        <Keycard value={stream.streamKey} />
+        <UrlCard value={stream.serverurl} />
+        <Keycard value={stream.streamkey} />
       </div>
     </div>
   )

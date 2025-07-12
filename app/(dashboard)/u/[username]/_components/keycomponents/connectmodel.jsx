@@ -38,14 +38,17 @@ export const ConnectModal = () => {
     const [ isPending, startTransition ] = useTransition();
     const [ingressType, setIngressType] = useState(RTMP);
 
+
 const onSubmit=() => {
-  startTransition(
+  startTransition(() => {
     createIngress(ingressType)
     .then(()=>{
         toast.success("Ingress created")
+        // click() acts as a click and clicks the cancel button( closeRef.current) automatically 
         closeRef?.current?.click()
     })
     .catch(()=>toast.error("Something went wrong"))
+  }
   )
 }
 
